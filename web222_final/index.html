@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>Christopher Petherick</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  </head>
+  <div class="viewport">
+  <body>
+    
+    <nav id="mainMenu">            
+      <ul>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#contact" onclick="clickBtn()">Contact me</a></li>
+          <li><a href="img\Christopher_Petherick_Resume-1.png">Resume</a></li>
+      </ul>
+    </nav>
+      
+    <div class="home" style="text-align:center">
+      <img src="./img/ChrisPetherick.jpg" alt="" class="home_image">
+      <div class="basic_info">
+        <h2>Basic Information</h2>
+        <table>
+          <tbody>
+            <tr>
+              <th >Course:</th>
+              <td>Web Programming Principles</td>
+            </tr>
+            <tr>
+              <th >Course Code:</th>
+              <td>WEB222NGG</td>
+            </tr>
+            <tr>
+              <th >Professor:</th>
+              <td>Harry Scanlan</td>
+            </tr>
+            <tr>
+              <th >Name:</th>
+              <td>Christopher Petherick</td>
+            </tr>
+            <tr>
+              <th >Student ID:</th>
+              <td>106263205</td>
+            </tr>
+            <tr>
+              <th >Email:</th>
+              <td>cpetherick@myseneca.ca</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>      
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="parent">
+      <div id="honest">
+        <h2><ion-icon name="hand-left-outline"></ion-icon>Academic Honesty</h2>
+        <br>
+          <p>
+            I declare that my assessment is wholly my own work in accordance
+            with Seneca Academic Policy. No part of this assessment has been
+            copied manually or electronically from any other source (including
+            web sites) except for the information supplied by the WEB222
+            instructors and / or made available in this assessment for my use.
+            I also declare that no part of this assignment has been
+            distributed to other students.
+            <br><br>
+            Date: August 17, 2022
+          </p>
+      </div>
+      <div id="edu">
+        <section class="education" id="education">
+          <h2><ion-icon name="school-outline"></ion-icon>Education</h2> 
+          <div>
+            <h3>Seneca College</h3>
+            <br>
+            <table>
+              <tbody>
+                <tr>
+                  <th >Certificate:</th>
+                  <td>Advanced Diploma</td>
+                </tr>
+                <tr>
+                  <th >Course:</th>
+                  <td>Computer Programming & Analysis</td>
+                </tr>
+                <tr>
+                  <th >Term:</th>
+                  <td>2021 Fall ~ 2024 Winter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="aboutme" >
+      <h2>About me:</h2>
+      <br>
+        <a href="img\Christopher_Petherick_Resume-1.png" target="_blank">Resume</a>
+      <br>  
+        <p>
+          I'm always be outgoing, up for a challenge, and passionate about my work.
+          I have 4 years of experience in sales and retail. That environment developed
+          my business communication skills as well as general responsibility. 
+          I'm First Aid and CPR certified. In addition to being food safety certified.
+          Culinary - Hospitality and Tourism <abbr title="Specialist High Skills Major">SHSM</abbr> graduate.      
+        </p>
+    </div>
+
+    <div id="contact">
+      <form class="contact-form" action="https://httpbin.org/post" method="post">
+        <h1>Contact</h1>
+          <div class="row">
+              <div class="input-field">
+                  <label for="name"><span class="required-field">*</span>Name</label>
+                  <input type="text" name="name" id="name" required placeholder="John Smith">
+              </div>
+              <div class="input-field">
+                  <label for="email"><span class="required-field">*</span>Email</label>
+                  <input type="email" name="email" id="email" required  placeholder="example@myseneca.ca">
+              </div>
+          </div>
+          <div class="row">
+              <div class="input-field long">
+                  <label for="address"><span class="required-field">*</span>Street Address</label>
+                  <input type="text" name="address" id="address" required>
+              </div>
+          </div>
+          <div class="row">
+              <div class="input-field">
+                  <label for="city"><span class="required-field">*</span>City</label>
+                  <input list="cities-choices" id="city" name="city">
+                  <datalist id="cities-choices">
+                      <option value="Toronto">
+                      <option value="Vancouver">
+                      <option value="Calgary">
+                      <option value="Edmonton">
+                      <option value="Winnipeg">
+                      <option value="Victoria">
+                  </datalist>
+              </div>
+              <div class="input-field">
+                  <label for="postal"><span class="required-field">*</span>Postal Code</label>
+                  <input type="text" name="postal" id="postal" placeholder="A1A 1A1"
+                      pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+              </div>
+          </div>
+          <div class="row">
+              <div class="radio-field">
+                  <div class="radio-option">
+                      <input type="radio" name="query" id="question" checked>
+                      <label for="question">Question</label>
+                  </div>
+                  <div class="radio-option">
+                      <input type="radio" name="query" id="comment">
+                      <label for="comment">Comment</label>
+                  </div>
+                  <div class="radio-option">
+                      <input type="radio" name="query" id="hiring">
+                      <label for="hiring">Hiring</label>
+                  </div>
+              </div>
+          </div>
+          <div class="row hidden hourly">
+              <div class="input-field">
+                  <label for="rate">Hourly Rate</label>
+                  <input type="number" name="rate" id="rate">
+              </div>
+          </div>
+          <div class="row">
+              <div class="input-field long">
+                  <label for="message"><span class="required-field">*</span>Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+              </div>
+          </div>
+          <div class="buttons">
+              <button type="reset">Reset</button>
+              <button type="submit" value="submit">Submit</button>
+          </div>
+      </form>
+    </div>
+    <script src="./src/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</div>
+</html>

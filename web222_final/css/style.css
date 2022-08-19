@@ -1,0 +1,311 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-family: Arial; 
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.viewport {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  background-color:rgb(255, 220, 160);
+}
+nav {
+  background-color: #ff353f;
+  padding: 20px;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+
+nav ul {
+  margin: auto;
+  padding: 10px;	
+  color: white;
+  
+}  
+
+nav li {
+  display: inline;
+  padding: 10px 10px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #7a0000;
+}
+
+body{
+  background-color: rgb(255, 235, 200);
+  margin: 0;
+}
+
+@media (min-width: 0px) {
+  .home{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content:center;
+  } 
+
+  .home_image{
+    height: 480px;
+    width: 360px;
+  }
+
+  .basic_info{
+    display: inline-block;
+    font-size: 24px;
+    background-color:rgb(255, 235, 200);
+  }
+
+  .basic_info h2{
+    font-size: 36px;
+  }
+
+  .basic_info th{
+    padding: 15px; 
+  }
+}
+
+
+@media (min-width: 100px) {
+  #parent {
+    color: white;
+    display: grid;
+    font-size: 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #honest {
+    width: 100%;
+    height: 100%; 
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ff353f;
+  }
+
+  #honest h2{
+    text-align:center;
+  }
+
+  #honest p{
+    font-size: 20px;
+  }
+
+  #edu {
+    width: 100%;
+    height: 100%; 
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ff353f;
+
+  }
+
+  .education h2{
+    text-align: center;
+    margin-bottom: 1em;
+  } 
+
+  .education h3{
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+#aboutme{
+  color: white;
+  width: 100%;
+  height: 100%; 
+  max-width: 1000px;
+  width: 90%;
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #ff353f;
+}
+
+#aboutme h2{
+  font-size: 24px;
+} 
+
+#aboutme p{
+  font-size: 20px;
+} 
+
+#contact {
+  width: 100%;
+  height: 100%; 
+  background-color: #ff353f;
+}
+
+#contact h1{
+  font-size: 28px;
+}
+
+
+form {
+  max-width: 550px;
+  width: 90%;
+  background: white;
+  margin: 17vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+h1{
+  margin: 0;
+  text-align: center;
+}
+
+label{
+  display: block; 
+  margin: 20px 0;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: 1px  solid white;
+  border-color:black;
+}
+
+.center{
+  text-align: center;
+}
+
+input[type="submit"]{
+  display: inline-flex;
+  margin-top: 30px;
+  width: 90%;
+  width: 200px;
+  color: black;
+  font-size: 17px;
+  border-radius: 3px;
+}
+
+table {
+  min-width: 300px;
+}
+
+
+#contact {
+  color: rgb(49, 109, 241);
+  padding-block: 5rem;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-block: 1rem;
+}
+
+.input-field {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+.radio-field,
+.checkbox-field {
+  display: flex;
+  gap: 2rem;
+}
+
+.radio-option,
+.checkbox-option {
+  display: flex;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #252525;
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  font-size: 0.9rem;
+  color: #252525;
+}
+
+.required-field {
+  color: red;
+  margin-right: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  text-align: center;
+  border: none;
+  flex: none;
+  width: 100px;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+@media (max-width: 480px) {
+  .row {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+}
